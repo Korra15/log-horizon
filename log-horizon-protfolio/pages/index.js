@@ -4,7 +4,6 @@ import MemberCard from '../compoments/memberCard';
 
 function Home({ NextPage }){
     return (
-        <div>
         <Container>
 
             { /* Navbar */ }
@@ -40,7 +39,7 @@ function Home({ NextPage }){
                 </Grid.Container>
             
             { /* Team Cards */ }
-                <Grid.Container gap={2}>
+                {/* <Grid.Container gap={2}>
                     <Grid xs={6} sm={4}>
                         <MemberCard
                             label="Ayushi"
@@ -48,9 +47,8 @@ function Home({ NextPage }){
                             imageURL = "https://littlevisuals.co/images/red_dawn.jpg"
                         />
                     </Grid>
-                </Grid.Container>
+                </Grid.Container> */}
         </Container>
-        </div>
     )
 }
 
