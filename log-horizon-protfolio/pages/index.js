@@ -1,54 +1,60 @@
-import { Container, Navbar, Text, Button, Grid, Col } from '@nextui-org/react';
-import MemberCard from '../compoments/memberCard';
+import { Navbar, Text, Button, Grid, Image, Avatar } from '@nextui-org/react';
 
+const imageStyle = {
+    border: '1px solid #f06852',
+  }
+
+// css={{"paddingLeft":"700px", "paddingTop":"0px"}}
 
 function Home({ NextPage }){
     return (
-        <Container>
-
+        <div>
             { /* Navbar */ }
-            <Navbar isCompact variant={'static'}>
-                <Navbar.Brand> 
-                    <Text b color="inherit">
-                        Portfolio
-                    </Text>
+            <Navbar isBordered variant={"floating"}>
+                <Navbar.Brand > 
+                    <Avatar src="logo.png" 
+                            size="lg"
+                            color='warning'
+                            bordered
+                            zoomed />
                 </Navbar.Brand>
-                {/* <Navbar.Content>
-                    <Navbar.Link href="#"> Contact Us</Navbar.Link>
-                    <Navbar.Link href="#"> Temp</Navbar.Link>
-                    <Navbar.Link href="#"> Temp</Navbar.Link>
-                </Navbar.Content> */}
                 <Navbar.Content>
-                    <Button size="sm" shadow color="success" href="#"> Contact Us</Button>
                     <Navbar.Item>
-                        {/* <Button auto flat href="#"> About Us</Button> */}
                         <Button size="sm" shadow color="gradient" href="#"> About Us</Button>
-                      
+                    </Navbar.Item>
+                    <Navbar.Item>
+                        <Button size="sm" shadow color="error" href="#"> Our Projects</Button>
+                    </Navbar.Item>
+                    <Navbar.Item>
+                        <Button size="sm" shadow color="success" href="#"> Contact Us</Button>
                     </Navbar.Item>
                 </Navbar.Content>
             </Navbar>
 
             { /* Jumbotron */ }
-                <Grid.Container justify="center" css={{"height": "500px", "backgroundImage":"url(https://littlevisuals.co/images/sunset.jpg)"}}>
-                    <Grid xs={12} sm={6} alignItems="center">    {/* Col and Row */}
-                        <Col css={{"width": "100%"}}>
-                            <Text weight={"bold"} size={70} css={{"textAlign":"center"}}> Log Horizon  </Text>
-                            <Text weight={"bold"} size={70} css={{"textAlign":"center"}}> Portfolio </Text>
-                        </Col>
-                    </Grid> 
-                </Grid.Container>
-            
-            { /* Team Cards */ }
-                {/* <Grid.Container gap={2}>
-                    <Grid xs={6} sm={4}>
-                        <MemberCard
-                            label="Ayushi"
-                            title = "Developer"
-                            imageURL = "https://littlevisuals.co/images/red_dawn.jpg"
-                        />
+                <Grid.Container gap={2} justify='right'>
+                    <Grid >
+                        <Text weight={"bold"} size={50} css={{"paddingTop":"80px", textAlign:"center"}}> Team Log Horizon </Text>
+                        <Text color='$subText' style={{ wordWrap:"break-word", width:"600px", marginTop:"20px"}}>
+                            A team of enthusiastic individuals working towards building this world a better place. This is our portfolio showcasing the power, creativity and xeal of the team.
+                            we beleive in giving back to the community that has givenus so much!
+                        </Text>
                     </Grid>
-                </Grid.Container> */}
-        </Container>
+                    <Grid >
+                        <div >
+                            <Image src="team.png"
+                                alt="Default Image"
+                                objectFit='fill'
+                                height={600}
+                                width={800}
+                                css={{"marginLeft": "10px"}}
+                            />
+                        </div>
+                       
+                    </Grid>
+                    
+                </Grid.Container>           
+        </div>
     )
 }
 
