@@ -1,0 +1,57 @@
+/* navbar.css */
+
+@media screen and (max-width: 600px) {
+    .navbar.content {
+      flex-direction: column;
+    }
+  
+    .navbar.item {
+      margin-bottom: 10px;
+    }
+  }
+  
+/* navbar.css */
+
+/* Styles for larger screens */
+.image-container {
+    margin-left: 10px;
+  }
+  
+  .image {
+    height: 600px;
+    width: 800px;
+  }
+  
+  .textContainer {
+    width: 600px;
+    margin-top: 20px;
+  }
+  
+  .text {
+    font-size: 50px;
+  }
+
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 600px) {
+    .image-container {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .image {
+      height: 400px; 
+      width: 600px; 
+    }
+
+    .text-container {
+        width: auto;
+        margin-top: 10px;
+        margin-left: 30px;
+        padding: 10px 10px; /* Adjust the padding as needed */
+      }
+
+    .text {
+        font-size: 30px;
+    }
+  }
+  
