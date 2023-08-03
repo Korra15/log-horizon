@@ -1,0 +1,36 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer utilities{
+  
+}
+body {
+  margin: 0; 
+  background-color: #f8f5ee; 
+}
+.sendButton {
+  color: green;
+  border: 2px solid green;
+  background-color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.sendButton:hover {
+  background-color: lightgreen;
+}
+
+
+
+
+
+form > div {
+  @apply flex flex-col gap-2;
+}
+
+input, textarea {
+  @apply shadow-md px-6 py-2 border-slate-300;
+}
