@@ -3,20 +3,6 @@ import Spline from '@splinetool/react-spline';
 import { NextUIProvider, createTheme,Card, Text,  Navbar, Button, Grid, Image, Avatar } from "@nextui-org/react";
 import Link from 'next/link'
 
-
-const portTheme = createTheme({
-    type: 'autumn',
-    theme: {
-      colors: {
-        background: '#f8f5ee',
-        text: '#5f3155',
-        subText: '#f06852',
-        yellowColor: '#eba869'
-      },
-      space: {},
-      fonts: {}
-    }
-  })
 export default function App() {
   return (
     <div>
