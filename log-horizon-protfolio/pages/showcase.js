@@ -3,23 +3,10 @@ import Spline from '@splinetool/react-spline';
 import { NextUIProvider, createTheme,Card, Text,  Navbar, Button, Grid, Image, Avatar } from "@nextui-org/react";
 import Link from 'next/link'
 
-export default function App() {
+
+function showcase({ NextPage }){
   return (
     <div>
-         { /* Navbar */ }
-            <Navbar isBordered variant={"floating"}>
-            <Link href="/">
-                <Navbar.Brand> 
-                    
-                    <Avatar src="logo.png" 
-                            size="lg"
-                            color='warning'
-                            bordered
-                            zoomed />
-                    
-                </Navbar.Brand>
-                </Link>
-                </Navbar>
 
         <div class="container">
             <div class="content">
@@ -80,6 +67,4 @@ export default function App() {
 }
 
 
-
-
-
+export default showcase;

@@ -1,6 +1,6 @@
-//import '../st'
-import  { AppProps } from "next/app";
+import React from 'react';
 import { NextUIProvider, createTheme } from "@nextui-org/react";
+import PortfolioNavbar from '../compoments/PortfolioNavbar';
 
 const portTheme = createTheme({
     type: 'autumn',
@@ -20,10 +20,13 @@ const portTheme = createTheme({
   
 
 export default function MyApp({ Component, pageProps }) {
-    return ( 
-    <NextUIProvider theme={portTheme}>
-        <Component {...pageProps} /> 
-    </NextUIProvider>
+    return (
+      <>
+        <NextUIProvider theme={portTheme}>
+          <PortfolioNavbar />
+          <Component {...pageProps} /> 
+        </NextUIProvider>
+      </>
     )
 }
 
