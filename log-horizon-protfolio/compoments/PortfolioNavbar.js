@@ -27,7 +27,9 @@ function PortfolioNavbar(props){
                     </Link>
                     </Navbar.Item>
                     <Navbar.Item>
-                        <Button size="sm" shadow color="success" href="#"> Contact Us </Button>
+                        <Link href="/contact-us">
+                        <Button size="sm" shadow color="success" > Contact Us </Button>
+                        </Link>
                     </Navbar.Item>
                 </Navbar.Content>
             </Navbar>
